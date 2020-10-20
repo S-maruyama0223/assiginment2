@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="321-z8-j19">
+                                <rect key="frame" x="88" y="117" width="94" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="5lx-4K-69d"/>
+                                    <constraint firstAttribute="height" constant="34" id="QHG-Cy-PNm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mmY-bn-kxE">
+                                <rect key="frame" x="240" y="117" width="94" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="oG1-Vb-8eE"/>
+                                    <constraint firstAttribute="height" constant="34" id="pjd-4t-m23"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oW1-uq-Rdh">
+                                <rect key="frame" x="88" y="190" width="246" height="32"/>
+                                <segments>
+                                    <segment title="+"/>
+                                    <segment title="-"/>
+                                    <segment title="×"/>
+                                    <segment title="÷"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQp-go-VtZ">
+                                <rect key="frame" x="88" y="251" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="m1g-wP-btF"/>
+                                    <constraint firstAttribute="width" constant="46" id="vpC-2Z-umk"/>
+                                </constraints>
+                                <state key="normal" title="合計"/>
+                                <connections>
+                                    <action selector="tapSumButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="opp-cM-tSP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eih-sq-Ifk">
+                                <rect key="frame" x="171" y="251" width="153" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="2Y0-hP-fpo"/>
+                                    <constraint firstAttribute="width" constant="153" id="pQc-Sa-U9u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Eih-sq-Ifk" firstAttribute="leading" secondItem="eQp-go-VtZ" secondAttribute="trailing" constant="37" id="1zH-lV-30D"/>
+                            <constraint firstItem="oW1-uq-Rdh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="C5d-Od-8ob"/>
+                            <constraint firstItem="321-z8-j19" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="73" id="IcC-Pt-jBd"/>
+                            <constraint firstItem="mmY-bn-kxE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="73" id="Kgd-XE-ynf"/>
+                            <constraint firstItem="321-z8-j19" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="Kpx-oU-A3r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oW1-uq-Rdh" secondAttribute="trailing" constant="80" id="LrF-VU-ns5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mmY-bn-kxE" secondAttribute="trailing" constant="80" id="OVG-JD-QWs"/>
+                            <constraint firstItem="eQp-go-VtZ" firstAttribute="top" secondItem="oW1-uq-Rdh" secondAttribute="bottom" constant="30" id="Vwl-N5-L3M"/>
+                            <constraint firstItem="oW1-uq-Rdh" firstAttribute="top" secondItem="321-z8-j19" secondAttribute="bottom" constant="39" id="VyC-mB-Loh"/>
+                            <constraint firstItem="Eih-sq-Ifk" firstAttribute="top" secondItem="oW1-uq-Rdh" secondAttribute="bottom" constant="30" id="Z4E-tk-dDs"/>
+                            <constraint firstItem="eQp-go-VtZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="ZO7-sr-sfw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fourArithmeticSegment" destination="oW1-uq-Rdh" id="25K-24-zaK"/>
+                        <outlet property="leftNumField" destination="321-z8-j19" id="om5-wf-j0J"/>
+                        <outlet property="resultLabel" destination="Eih-sq-Ifk" id="ERa-zn-mR7"/>
+                        <outlet property="rightNumField" destination="mmY-bn-kxE" id="c5i-bQ-aZ6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
